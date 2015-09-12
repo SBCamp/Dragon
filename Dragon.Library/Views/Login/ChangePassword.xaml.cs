@@ -12,26 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Dragon.Library;
 
-namespace PearlDragon
+namespace Dragon.Library.Views.Login
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for ChangePassword.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ChangePassword : UserControl
     {
-        public MainWindow()
+        public ChangePassword()
         {
             InitializeComponent();
-        }
-
-        void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            var login = new Dragon.Library.Views.Login.Signin();
-            Grid.SetColumnSpan(login, 2);
-            grdMain.Children.Insert(1, login);
-
         }
     }
 }

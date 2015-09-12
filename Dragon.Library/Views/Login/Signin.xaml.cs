@@ -26,6 +26,7 @@ namespace Dragon.Library.Views.Login
         }
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+
             var cust = new Dragon.Library.Entities.Customer();
         }
     }

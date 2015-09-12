@@ -13,6 +13,7 @@
             <ColumnDefinition Width="55" />
             <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
+        
         <ContentControl x:Name="MaintContent" IsTabStop="False" Grid.Column="1" Grid.Row="1" />
         
     </Grid>

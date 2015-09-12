@@ -18,5 +18,15 @@ namespace Dragon.Library
             var str = Convert.ToString(s);
             return String.IsNullOrWhiteSpace(str) ? string.Empty : str;
         }
+
+        public static bool NotNullOrWhiteSpace(this string s)
+        {
+            return !String.IsNullOrWhiteSpace(s);
+        }
+
+        public static bool IsNullOrWhiteSpace(this string s)
+        {
+            return String.IsNullOrWhiteSpace(s);
+        }
     }
 }

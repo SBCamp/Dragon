@@ -7,8 +7,14 @@ using Dragon.Library.Objects;
 
 namespace Dragon.Library.Entities
 {
-   public class Customer
+    class Customer
     {
+       private Credentials _Authorization;
+       public Credentials Authorization
+       {
+           get { return _Authorization; }
+           set { _Authorization = value; }
+       }
         private Guid _CustomerID;
         public Guid CustomerID
         {
