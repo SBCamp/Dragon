@@ -28,8 +28,9 @@ namespace PearlDragon
 
         void Window_Loaded(object sender, RoutedEventArgs e)
         {
-           var login = new Dragon.Library.Views.Login.Signin();
-           grdMain.Children.Insert(0, login);
+            var login = new Dragon.Library.Views.Login.Signin();
+            Grid.SetColumnSpan(login, 2);
+            grdMain.Children.Insert(1, login);
 
         }
     }

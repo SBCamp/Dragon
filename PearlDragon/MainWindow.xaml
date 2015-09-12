@@ -10,16 +10,9 @@
         Title="Pearl Dragon" WindowState="Maximized">
     <Grid x:Name="grdMain">
         <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="3*"/>
-        <ColumnDefinition Width="3*"/>
-        <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="55" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-        </Grid.RowDefinitions>
-        
         <ContentControl x:Name="MaintContent" IsTabStop="False" Grid.Column="1" Grid.Row="1" />
         
     </Grid>
