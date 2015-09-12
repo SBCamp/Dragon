@@ -12,25 +12,21 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Dragon.Library.Views;
 
-namespace PearlDragon
+namespace Dragon.Library.Views.Login
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Signin.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Signin : UserControl
     {
-        public MainWindow()
+        public Signin()
         {
             InitializeComponent();
         }
-
-        void Window_Loaded(object sender, RoutedEventArgs e)
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-           var login = new Dragon.Library.Views.Login.Signin();
-           grdMain.Children.Insert(0, login);
-
+            var cust = new Dragon.Library.Entities.Customer();
         }
     }
 }

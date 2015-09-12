@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dragon.Library.Objects
 {
-    class Communication
+    public class Communication
     {
         private Telephone Phone;
 

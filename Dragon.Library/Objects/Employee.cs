@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dragon.Library.Objects
 {
-    class Employee
+    public class Employee
     {
         Employee()
         {

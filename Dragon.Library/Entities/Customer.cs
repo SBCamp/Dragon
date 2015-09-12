@@ -7,7 +7,7 @@ using Dragon.Library.Objects;
 
 namespace Dragon.Library.Entities
 {
-    class Customer
+   public class Customer
     {
         private Guid _CustomerID;
         public Guid CustomerID

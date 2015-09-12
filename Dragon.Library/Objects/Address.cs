@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dragon.Library.Objects
 {
-    class Address
+   public class Address
     {
         private string _Prefix;
         private string _StreetAddress1;
