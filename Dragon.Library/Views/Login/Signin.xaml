@@ -21,7 +21,7 @@
         <Label Grid.Column="1" Grid.Row="1" Margin="0,60,0,0" VerticalAlignment="Top">Username:</Label>
         <TextBox Grid.Column="1" Grid.Row="1" Name="txtUserName" Margin="10,60,0,0" Height="25" Width="150" VerticalAlignment="Top" HorizontalAlignment="Center" Text="{Binding Path=Customer.Authorization.userName, Mode=OneWay}"/>
         <Label Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Margin="0,120,0,0">Password:</Label>
-        <TextBox Grid.Column="1" Grid.Row="1" Name="txtPassword" Margin="10,120,0,0" Height="25" Width="150" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <PasswordBox Grid.Column="1" Grid.Row="1" Name="txtPassword" Margin="10,120,0,0" Height="25" Width="150" MaxLength="16" PasswordChar="*" VerticalAlignment="Top" HorizontalAlignment="Center"/>
         <Button Grid.Column="1" Grid.Row="2" Name="btnLogin" Height="25" Width="150" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnLogin_Click">Login</Button>
     </Grid>
 </UserControl>
