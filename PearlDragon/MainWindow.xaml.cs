@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Dragon.Library;
 
 namespace PearlDragon
 {
@@ -23,11 +24,21 @@ namespace PearlDragon
         public MainWindow()
         {
             InitializeComponent();
+            Dragon.Library.Views.NavBar NB = new Dragon.Library.Views.NavBar();
+            TextBox TB = new TextBox() { Name = "TEST", Height = 100, Width = 100, Visibility = System.Windows.Visibility.Visible, VerticalAlignment = System.Windows.VerticalAlignment.Top, Text="FUCK" };
+            Grid.SetColumn(NB, 0);
+            Grid.SetRow(NB, 0);
+            MainGrid.Children.Add(NB);
+            //Dragon.Library.Views.Logon lgn = new Dragon.Library.Views.Logon();
+            //Set the Logon screen
+            
         }
 
-        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        public void Login(string Username, string Password)
         {
+            if(Username.ToSafeString() == "steve" && Password == "")
 
+            else
         }
     }
 }

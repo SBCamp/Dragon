@@ -7,22 +7,11 @@
         mc:Ignorable="d"
         Background="#ccd0d4" MinHeight="800" MinWidth="800"
         Title="Pearl Dragon" WindowState="Maximized">
-    <Grid>
+    <Grid Name="MainGrid">
         <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="3*"/>
-        <ColumnDefinition Width="3*"/>
-        <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="3*"/>
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="3*"/>
-        </Grid.RowDefinitions>
-        <Image Grid.Column="1" Grid.Row="1" Source="C:\VSNetProjects\Dragon.Library\Dragon.Library\PearlDragon\Content\dragon.png" VerticalAlignment="Center" HorizontalAlignment="Center" Opacity="100" />
-        <Label Grid.Column="1" Grid.Row="1" Margin="0,60,0,0" VerticalAlignment="Top">Username: </Label>
-        <TextBox Grid.Column="1" Grid.Row="1" Name="txtUserName" Margin="10,60,0,0" Height="25" Width="150" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-        <Label Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Margin="0,120,0,0">Password:</Label>
-        <TextBox Grid.Column="1" Grid.Row="1" Name="txtPassword" Margin="10,120,0,0" Height="25" Width="150" VerticalAlignment="Top" HorizontalAlignment="Center"/>
-        <Button Grid.Column="1" Grid.Row="2" Name="btnLogin" Height="25" Width="150" VerticalAlignment="Top" HorizontalAlignment="Center" Click="btnLogin_Click">Login</Button>
+
     </Grid>
 </Window>
