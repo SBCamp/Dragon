@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Dragon.Library.Methods.Account
 {
-    class Login
+    public class Login
     {
         public static void CheckLogin(string Username, string Password)
         {

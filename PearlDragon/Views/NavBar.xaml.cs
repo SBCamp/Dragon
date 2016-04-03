@@ -12,11 +12,14 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Dragon.Library.Methods.ViewControls;
+using Dragon.Library;
+using Dragon.SSH.Views;
 
-namespace Dragon.Library.Views
+namespace PearlDragon.Views
 {
     /// <summary>
-    /// Interaction logic for NavBar.xaml
+    /// Interaction logic for UserControl1.xaml
     /// </summary>
     public partial class NavBar : UserControl
     {
@@ -24,10 +27,10 @@ namespace Dragon.Library.Views
         {
             InitializeComponent();
         }
-
         private void Button_Home_Click(object sender, RoutedEventArgs e)
         {
-            Methods.ViewControls.Controls.SetUIElement(new Views.Home(), 1, 0, this);
+            
+            Controls.SetUIElement(new Home(), 1, 0, this);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -42,7 +45,7 @@ namespace Dragon.Library.Views
 
         private void Button_SSH_Click(object sender, RoutedEventArgs e)
         {
-            Methods.ViewControls.Controls.SetUIElement(new Dragon.SSH.Views.SSHLandingView(), 1, 0, this);
+            Controls.SetUIElement(new SSHLandingView(), 1, 0, this);
         }
     }
 }

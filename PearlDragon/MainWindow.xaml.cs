@@ -24,13 +24,9 @@ namespace PearlDragon
         public MainWindow()
         {
             InitializeComponent();
-            //Dragon.Library.Views.NavBar NB = new Dragon.Library.Views.NavBar();
-            Dragon.Library.Views.Logon lgn = new Dragon.Library.Views.Logon();
-            Grid.SetColumn(lgn, 1);
-            Grid.SetRow(lgn, 1);
-            MainGrid.Children.Add(lgn);
             //Set the Logon screen
-            
+            Dragon.Library.Methods.ViewControls.Controls.SetUIElement(new Views.Logon(), 1, 1, MainGrid);
+                
         }
     }
 }

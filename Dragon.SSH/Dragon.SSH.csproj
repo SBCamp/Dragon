@@ -68,6 +68,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Objects\Connection.cs" />
     <Compile Include="Views\SSHLandingView.xaml.cs">
       <DependentUpon>SSHLandingView.xaml</DependentUpon>
     </Compile>
@@ -108,7 +109,12 @@
   <ItemGroup>
     <Folder Include="Entities\" />
     <Folder Include="Methods\" />
-    <Folder Include="Objects\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dragon.Library\Dragon.Library.csproj">
+      <Project>{ad118637-dfaa-464c-9581-78a61e6f0649}</Project>
+      <Name>Dragon.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

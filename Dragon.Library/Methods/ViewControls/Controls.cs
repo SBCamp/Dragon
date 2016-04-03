@@ -1,27 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using Dragon.Library;
 
 namespace Dragon.Library.Methods.ViewControls
 {
-    class Controls
+   public class Controls
     {
         /// <summary>
         /// Will Set and Remove Child element
@@ -64,6 +49,13 @@ namespace Dragon.Library.Methods.ViewControls
             Grid.SetColumn(AddUE, Col);
             Grid.SetRow(AddUE, Row);
             ((Panel)Child.Parent).Children.Add(AddUE);
+        }
+        public static void SetUIElement(UIElement AddUE, int Col, int Row, Grid main)
+        {
+            //Issue here when there are no loaded elements
+            Grid.SetColumn(AddUE, Col);
+            Grid.SetRow(AddUE, Row);
+            main.Children.Add(AddUE);
         }
     }
 }

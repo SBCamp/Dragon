@@ -12,9 +12,12 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Dragon.Library;
+using Dragon.Library.Methods.Account;
+using Dragon.Library.Entities;
+using Dragon.Library.Methods.ViewControls;
+using Dragon.Library.Objects;
 
-namespace Dragon.Library.Views
+namespace PearlDragon.Views
 {
     /// <summary>
     /// Interaction logic for Logon.xaml
@@ -25,17 +28,17 @@ namespace Dragon.Library.Views
         {
             InitializeComponent();
         }
-
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            Methods.Account.Login.CheckLogin(txtUserName.Text, txtPassword.Text);
-            if (Entities.CustomerCollection.CUS[0].User.LoggedIn)
+            Login.CheckLogin(txtUserName.Text, txtPassword.Text);
+
+            if (CustomerCollection.CUS[0].User.LoggedIn)
             {
                 //Load in the Nav bar & Homepage
-                Methods.ViewControls.Controls.SetUIElementAndRemovParent(
-                    new List<Objects.MultiUIElm>() { 
-                    new Objects.MultiUIElm() { Element = new NavBar(), Col = 0, Row = 0}, 
-                    new Objects.MultiUIElm() { Element = new Home(), Col = 1, Row = 0 } },
+                Controls.SetUIElementAndRemovParent(
+                    new List<MultiUIElm>() { 
+                    new MultiUIElm() { Element = new NavBar(), Col = 0, Row = 0}, 
+                    new MultiUIElm() { Element = new Home(), Col = 1, Row = 0 } },
                     this);
             }
         }
