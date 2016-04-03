@@ -24,5 +24,25 @@ namespace Dragon.Library.Views
         {
             InitializeComponent();
         }
+
+        private void Button_Home_Click(object sender, RoutedEventArgs e)
+        {
+            Methods.ViewControls.Controls.SetUIElement(new Views.Home(), 1, 0, this);
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_SSH_Click(object sender, RoutedEventArgs e)
+        {
+            Methods.ViewControls.Controls.SetUIElement(new Dragon.SSH.Views.SSHLandingView(), 1, 0, this);
+        }
     }
 }

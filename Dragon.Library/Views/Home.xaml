@@ -1,0 +1,11 @@
+﻿<UserControl x:Class="Dragon.Library.Views.Home"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Label>Welcome to the Home Page Any and all content regarding updates and other content will go here.</Label>
+    </Grid>
+</UserControl>

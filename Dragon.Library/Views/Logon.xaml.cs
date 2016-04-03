@@ -31,13 +31,13 @@ namespace Dragon.Library.Views
             Methods.Account.Login.CheckLogin(txtUserName.Text, txtPassword.Text);
             if (Entities.CustomerCollection.CUS[0].User.LoggedIn)
             {
-                NavBar test = new NavBar();
-                Grid.SetColumn(test, 0);
-                Grid.SetRow(test, 0);
-                ((Panel)this.Parent).Children.Add(test);
-                ((Panel)this.Parent).Children.Remove(this);
+                //Load in the Nav bar & Homepage
+                Methods.ViewControls.Controls.SetUIElementAndRemovParent(
+                    new List<Objects.MultiUIElm>() { 
+                    new Objects.MultiUIElm() { Element = new NavBar(), Col = 0, Row = 0}, 
+                    new Objects.MultiUIElm() { Element = new Home(), Col = 1, Row = 0 } },
+                    this);
             }
-                
         }
     }
 }

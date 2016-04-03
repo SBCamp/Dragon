@@ -6,8 +6,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="150">
     <Grid VerticalAlignment="Top">
-        <Button Height="40" Margin="0,0,0,0">TEST</Button>
-        <Button Height="40" Margin="0,85,0,0">SSH</Button>
-        <Button Height="40" Margin="0,170,0,0">Phish</Button>
+        <Button Height="40" Margin="0,0,0,0" Click="Button_Home_Click">Home</Button>
+        <Button Height="40" Margin="0,85,0,0" Click="Button_SSH_Click">SSH</Button>
+        <Button Height="40" Margin="0,170,0,0" Click="Button_Click_2">Phish</Button>
     </Grid>
 </UserControl>
