@@ -8,6 +8,16 @@ namespace Dragon.Library.Methods.Account
 {
     class Login
     {
-
+        public static void CheckLogin(string Username, string Password)
+        {
+            new Entities.CustomerCollection();
+            if(Username.ToSafeString() == "steve" && Password == "") {
+                Entities.CustomerCollection.CUS[0].User.LoggedIn = true;
+            }
+            else
+            {
+                Environment.Exit(0);
+            }
+        }
     }
 }

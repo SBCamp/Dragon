@@ -24,21 +24,13 @@ namespace PearlDragon
         public MainWindow()
         {
             InitializeComponent();
-            Dragon.Library.Views.NavBar NB = new Dragon.Library.Views.NavBar();
-            TextBox TB = new TextBox() { Name = "TEST", Height = 100, Width = 100, Visibility = System.Windows.Visibility.Visible, VerticalAlignment = System.Windows.VerticalAlignment.Top, Text="FUCK" };
-            Grid.SetColumn(NB, 0);
-            Grid.SetRow(NB, 0);
-            MainGrid.Children.Add(NB);
-            //Dragon.Library.Views.Logon lgn = new Dragon.Library.Views.Logon();
+            //Dragon.Library.Views.NavBar NB = new Dragon.Library.Views.NavBar();
+            Dragon.Library.Views.Logon lgn = new Dragon.Library.Views.Logon();
+            Grid.SetColumn(lgn, 1);
+            Grid.SetRow(lgn, 1);
+            MainGrid.Children.Add(lgn);
             //Set the Logon screen
             
-        }
-
-        public void Login(string Username, string Password)
-        {
-            if(Username.ToSafeString() == "steve" && Password == "")
-
-            else
         }
     }
 }

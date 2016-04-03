@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,8 +8,23 @@ using Dragon.Library.Objects;
 
 namespace Dragon.Library.Entities
 {
-    class Customer
+    public class CustomerCollection
     {
+        public static ObservableCollection<Customer> CUS;
+        public CustomerCollection()
+        {
+            CUS = new ObservableCollection<Customer>();
+            CUS.Add(new Customer());
+        }
+    }
+
+   public class Customer
+    {
+       public Customer()
+       {
+           _User = new UserProfile();
+       }
+
         private Guid _CustomerID;
         public Guid CustomerID
         {
@@ -19,6 +35,13 @@ namespace Dragon.Library.Entities
         public string Name {
             get { return _Name; }
             set { _Name = value; }
+        }
+
+        private UserProfile _User;
+        public UserProfile User
+        {
+            get { return _User; }
+            set { _User = value; }
         }
 
         private Employee[] _EmployeeList;
